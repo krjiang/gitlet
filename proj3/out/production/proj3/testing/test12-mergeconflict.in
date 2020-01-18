@@ -1,0 +1,27 @@
+#Tests for merge Conflict.
+> init
+<<<
++ hello.txt hello.txt
+> add hello.txt
+<<<
+> commit "hello"
+<<<
+> branch "branch"
+<<<
+> checkout "branch"
+<<<
++ hello.txt hi.txt
+> add hello.txt
+<<<
+> commit "hello -> hi"
+<<<
+> checkout "master"
+<<<
++ hello.txt howdy.txt
+> add hello.txt
+<<<
+> commit "hello -> howdy"
+<<<
+> merge "branch"
+Encountered a merge conflict.
+<<<

@@ -1,0 +1,21 @@
+#Checks to see if merge compiles in initial commit.
+> init
+<<<
++ hello.txt wug.txt
+> branch "branch"
+<<<
+> add hello.txt
+<<<
+> commit "first commit"
+<<<
+> checkout "branch"
+<<<
++ hi.txt notwug.txt
+> add hi.txt
+<<<
+> commit "added hi.txt"
+<<<
+> checkout "master"
+<<<
+> merge "branch"
+<<<

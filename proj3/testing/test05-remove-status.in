@@ -1,0 +1,25 @@
+#Remove and status test
+> init
+<<<
++ hello.txt wug.txt
++ hi.txt notwug.txt
+> add hello.txt
+<<<
+> add hi.txt
+<<<
+> rm hi.txt
+<<<
+> status
+=== Branches ===
+*master
+
+=== Staged Files ===
+hello.txt
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<

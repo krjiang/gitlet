@@ -1,0 +1,8 @@
+#Commit with no changes.
+> init
+<<<
++ hello.txt wug.txt
++ hi.txt notwug.txt
+> commit ""
+Please enter a commit message.
+<<<

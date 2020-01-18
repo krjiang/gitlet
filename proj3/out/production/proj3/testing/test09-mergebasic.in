@@ -1,0 +1,51 @@
+#Checks to see if merge compiles in basic case.
+> init
+<<<
++ hello.txt hello.txt
++ hi.txt hi.txt
+> add hello.txt
+<<<
+> add hi.txt
+<<<
+> commit "hello hi"
+<<<
+> branch "branch"
+<<<
++ howdy.txt howdy.txt
+> add howdy.txt
+<<<
+> rm hello.txt
+<<<
+> commit "hi howdy"
+<<<
+> checkout "branch"
+<<<
++ sup.txt sup.txt
+> add sup.txt
+<<<
+> rm hi.txt
+<<<
+> commit "hello sup"
+<<<
+> checkout "master"
+<<<
+> merge "branch"
+<<<
+* hello.txt
+* hi.txt
+= howdy.txt howdy.txt
+= sup.txt sup.txt
+> status
+=== Branches ===
+branch
+*master
+
+=== Staged Files ===
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<

@@ -1,0 +1,35 @@
+# Checks how rm and add work together.
+> init
+<<<
++ hello.txt hello.txt
+> add hello.txt
+<<<
+> status
+=== Branches ===
+*master
+
+=== Staged Files ===
+hello.txt
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<
+> rm hello.txt
+<<<
+> status
+=== Branches ===
+*master
+
+=== Staged Files ===
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<

@@ -1,0 +1,9 @@
+# Checks if find compiles
+> init
+<<<
++ hello.txt hello.txt
++ hi.txt hi.txt
+> add hello.txt
+<<<
+> commit "hello"
+<<<
